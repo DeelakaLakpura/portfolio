@@ -1,7 +1,6 @@
 'use client';
 import { useState } from "react";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 const ProfileCard = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import "react-typist/dist/Typist.css";
 import Lottie from 'react-lottie';
 import animationData from './contact.json';
