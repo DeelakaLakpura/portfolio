@@ -1,11 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
 import "react-typist/dist/Typist.css";
-import Lottie from 'react-lottie';
-import animationData from './contact.json';
 import AbstractSvgBackground from './AbstractSvgBackground'
 import TypingAnimation from './TypingAnimation'
-
+import { motion } from 'framer-motion';
 
 
 
