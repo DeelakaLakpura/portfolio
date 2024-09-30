@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import "react-typist/dist/Typist.css";
 import Lottie from 'react-lottie';
 import animationData from './contact.json';
@@ -211,6 +212,7 @@ export default function HeroSection() {
     setIsPopupOpen(!isPopupOpen);
   };
 
+  
   const downloadCV = () => {
     const cvUrl = 'https://firebasestorage.googleapis.com/v0/b/video-app-35cc0.appspot.com/o/CV%20(1).pdf?alt=media&token=9c4c75de-b19c-4bdd-aa29-89509ef6ff99';
     const link = document.createElement('a');
@@ -236,9 +238,9 @@ export default function HeroSection() {
         {/* Stats Section */}
         <div className="flex flex-wrap justify-center mt-8 space-x-4 space-y-4 md:space-y-0">
   {[
-    { icon: "fas fa-check-circle", value: "10+", label: "Completed Projects" },
-    { icon: "fas fa-user-friends", value: "8+", label: "Freelance Clients" },
-    { icon: "fas fa-trophy", value: "5+", label: "Honors & Awards" },
+    { icon: "fas fa-check-circle", value: "50+", label: "Finished Projects" },
+    { icon: "fas fa-user-friends", value: "20+", label: "Freelance Clients" },
+    { icon: "fas fa-trophy", value: "3+", label: "Honors & Awards" },
   ].map((stat, index) => (
     <motion.div
       key={index}
@@ -301,4 +303,5 @@ export default function HeroSection() {
 
   );
 }
+
 

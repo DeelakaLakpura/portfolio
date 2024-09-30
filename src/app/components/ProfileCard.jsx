@@ -1,6 +1,9 @@
 'use client';
 import { useState } from "react";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+
 
 const ProfileCard = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,6 +76,97 @@ const ProfileCard = () => {
         <SkillBar skill="Web Development" percentage="67%" />
         <SkillBar skill="Rest APIs" percentage="94%" />
         <SkillBar skill="Designing (UI/UX)" percentage="66%" />
+      </div>
+
+      <h3 className="mt-6 text-sm font-semibold">Technologies</h3>
+      <div className="flex flex-wrap justify-center mt-4 space-x-4">
+        {/** Example SVG Icons for Technologies */}
+        <motion.img
+          src="https://i.ibb.co/qxKQTxv/pngwing-com.png"
+          alt="HTML5"
+          className="w-12 h-12"
+          whileHover={{ scale: 1.2, rotate: 360 }}
+          transition={{ duration: 1 }}
+          animate={{ rotate: [0, 360], transition: { repeat: Infinity, duration: 4 } }}
+        />
+        <motion.img
+          src="https://i.ibb.co/ZLXKQxQ/pngwing-com-1.png"
+          alt="CSS3"
+          className="w-12 h-12"
+          whileHover={{ scale: 1.2, rotate: 360 }}
+          transition={{ duration: 1 }}
+          animate={{ rotate: [0, 360], transition: { repeat: Infinity, duration: 4 } }}
+        />
+        <motion.img
+          src="https://i.ibb.co/8ND02fz/pngwing-com-2.png"
+          alt="JavaScript"
+          className="w-12 h-12"
+          whileHover={{ scale: 1.2, rotate: 360 }}
+          transition={{ duration: 1 }}
+          animate={{ rotate: [0, 360], transition: { repeat: Infinity, duration: 4 } }}
+        />
+         <motion.img
+          src="https://i.ibb.co/nrHxTtm/pngwing-com-3.png"
+          alt="JavaScript"
+          className="w-12 h-12"
+          whileHover={{ scale: 1.2, rotate: 360 }}
+          transition={{ duration: 1 }}
+          animate={{ rotate: [0, 360], transition: { repeat: Infinity, duration: 4 } }}
+        />
+     
+     <motion.img
+          src="https://i.ibb.co/QN298nt/pngwing-com-9.png"
+          alt="JavaScript"
+          className="w-12 h-12"
+          whileHover={{ scale: 1.2, rotate: 360 }}
+          transition={{ duration: 1 }}
+          animate={{ rotate: [0, 360], transition: { repeat: Infinity, duration: 4 } }}
+        />
+     
+     <motion.img
+          src="https://i.ibb.co/F7h82B4/pngwing-com-6.png"
+          alt="JavaScript"
+          className="w-12 h-12"
+          whileHover={{ scale: 1.2, rotate: 360 }}
+          transition={{ duration: 1 }}
+          animate={{ rotate: [0, 360], transition: { repeat: Infinity, duration: 4 } }}
+        />
+
+
+<motion.img
+          src="https://i.ibb.co/7Jr2CV9/pngwing-com-7.png"
+          alt="JavaScript"
+          className="w-12 h-12"
+          whileHover={{ scale: 1.2, rotate: 360 }}
+          transition={{ duration: 1 }}
+          animate={{ rotate: [0, 360], transition: { repeat: Infinity, duration: 4 } }}
+        />
+        <motion.img
+          src="https://i.ibb.co/JQnK21w/pngwing-com-8.png"
+          alt="JavaScript"
+          className="w-12 h-12"
+          whileHover={{ scale: 1.2, rotate: 360 }}
+          transition={{ duration: 1 }}
+          animate={{ rotate: [0, 360], transition: { repeat: Infinity, duration: 4 } }}
+        />
+        <motion.img
+          src="https://i.ibb.co/jyDJCz1/pngwing-com-10.png"
+          alt="JavaScript"
+          className="w-12 h-12"
+          whileHover={{ scale: 1.2, rotate: 360 }}
+          transition={{ duration: 1 }}
+          animate={{ rotate: [0, 360], transition: { repeat: Infinity, duration: 4 } }}
+        /><motion.img
+        src="https://i.ibb.co/KsPNtKP/pngwing-com-11.png"
+        alt="JavaScript"
+        className="w-12 h-12"
+        whileHover={{ scale: 1.2, rotate: 360 }}
+        transition={{ duration: 1 }}
+        animate={{ rotate: [0, 360], transition: { repeat: Infinity, duration: 4 } }}
+      />
+     
+     
+     
       </div>
 
       {/* Education Section */}

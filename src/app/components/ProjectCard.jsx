@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
+import { motion } from "framer-motion";
 const CarSlider = ({ cars }) => {
   return (
     <div className="p-4">
-      <h2 className="text-3xl font-bold text-green-600 mb-4 text-center">Our Projects</h2>
+      <h2 className="text-3xl font-bold text-green-600 mb-4 text-center">My Projects</h2>
       <Swiper
         pagination={{
           clickable: true,

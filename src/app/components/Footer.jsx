@@ -1,13 +1,13 @@
 "use client";
 import React from 'react';
-// For React animations
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 text-gray-300 py-10 px-4">
-      {/* Container */}
+      
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         
         <motion.div
@@ -29,7 +29,7 @@ const Footer = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 0.8 }}
         >
-          <h3 className="text-xl font-bold text-green-400 mb-4">Follow Us</h3>
+          <h3 className="text-xl font-bold text-green-400 mb-4">Follow Me</h3>
           <div className="flex space-x-4">
             <a href="https://www.facebook.com/deelaka.lakpura.54/" className="text-gray-400 hover:text-green-400">
               <i className="fab fa-facebook fa-lg"></i>
