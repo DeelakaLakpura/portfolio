@@ -31,13 +31,7 @@ const projects = [
     githubUrl: "https://github.com/DeelakaLakpura/PrimePapers",
     demoUrl: "http://primepapers.kesug.com/",
   },
-  {
-    title: "Project One",
-    description: "",
-    imageUrl: "https://via.placeholder.com/400",
-    githubUrl: "https://github.com/your-repo/project-one",
-    demoUrl: "https://yourdemo.com/project-one",
-  },
+
  
   
   // More projects...
