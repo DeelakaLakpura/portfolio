@@ -200,19 +200,19 @@ const ProfileCard = () => {
       {/* Popup for Profile Image */}
       {isOpen && (
         <motion.div
-          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          onClick={handleClose}
-        >
-          <motion.img
-            src="https://i.ibb.co/BjqHT5B/profile-img.png"
-            alt="Profile Popup"
-            className="w-128 h-128 rounded-lg border-4 border-gray-800"
-            onClick={(e) => e.stopPropagation()} // Prevent click from closing popup
-          />
-        </motion.div>
+        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={handleClose}
+      >
+        <motion.img
+          src="https://i.ibb.co/BjqHT5B/profile-img.png"
+          alt="Profile Popup"
+          className="w-128 h-128 rounded-lg border-4 border-gray-800 z-60" // Increased z-index here
+          onClick={(e) => e.stopPropagation()} // Prevent click from closing popup
+        />
+      </motion.div>
       )}
     </motion.div>
   );
