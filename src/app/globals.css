@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Righteous", sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin.slow {
+  animation: spin-slow 5s linear infinite; /* Adjust the duration (3s) as needed */
+}
+/* Prevent overflow */
+
+/* Ensure the Swiper container does not overflow */
+
+.swiper-pagination {
+  position: absolute; /* Ensure it is positioned correctly */
+  bottom: 10px; /* Adjust position */
+  left: 50%;
+  transform: translateX(-50%); /* Center it */
+  z-index: 10; /* Make sure it appears above other elements */
+}
+
+.swiper-pagination-bullet {
+  background: #4caf50; /* Change to desired bullet color */
+  opacity: 0.5; /* Default opacity */
+  transition: opacity 0.3s; /* Transition for opacity change */
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1; /* Active bullet opacity */
+}
