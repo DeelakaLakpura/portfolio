@@ -10,53 +10,83 @@ const Loading = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 100 100"
             >
-                <defs>
-                    <circle id="dot" r="3" fill="#4c6ef5">
+                <circle cx="50" cy="50" r="35" fill="none" stroke="#4c6ef5" strokeWidth="6" />
+                <g>
+                    <circle cx="50" cy="15" r="5" fill="#4c6ef5">
                         <animate
-                            attributeName="r"
-                            values="3; 8; 3"
-                            dur="0.8s"
-                            begin="0s"
-                            repeatCount="indefinite"
-                        />
-                    </circle>
-                </defs>
-                <g fill="none" strokeWidth="4">
-                    <path
-                        d="M 50,50
-                           m -40, 0
-                           a 40,40 0 1,0 80,0
-                           a 40,40 0 1,0 -80,0"
-                        stroke="#28a745"
-                    />
-                    <path
-                        d="M 50,10
-                           A 40,40 0 0,1 90,50
-                           A 40,40 0 0,1 50,90
-                           A 40,40 0 0,1 10,50
-                           A 40,40 0 0,1 50,10"
-                        stroke="#ffc107"
-                    >
-                        <animate
-                            attributeName="stroke-dasharray"
-                            from="0, 251.2"
-                            to="251.2, 0"
+                            attributeName="cy"
+                            values="15;50;85;50;15"
                             dur="1.5s"
                             repeatCount="indefinite"
                         />
-                    </path>
-                    <circle>
-                        <use href="#dot">
-                            <animateTransform
-                                attributeName="transform"
-                                type="rotate"
-                                from="0 50 50"
-                                to="360 50 50"
-                                dur="1.5s"
-                                repeatCount="indefinite"
-                            />
-                        </use>
+                        <animate
+                            attributeName="cx"
+                            values="50;85;50;15;50"
+                            dur="1.5s"
+                            repeatCount="indefinite"
+                        />
                     </circle>
+                    <circle cx="85" cy="50" r="5" fill="#28a745">
+                        <animate
+                            attributeName="cy"
+                            values="50;85;50;15;50"
+                            dur="1.5s"
+                            repeatCount="indefinite"
+                        />
+                        <animate
+                            attributeName="cx"
+                            values="85;50;15;50;85"
+                            dur="1.5s"
+                            repeatCount="indefinite"
+                        />
+                    </circle>
+                    <circle cx="50" cy="85" r="5" fill="#ffc107">
+                        <animate
+                            attributeName="cy"
+                            values="85;50;15;50;85"
+                            dur="1.5s"
+                            repeatCount="indefinite"
+                        />
+                        <animate
+                            attributeName="cx"
+                            values="50;15;50;85;50"
+                            dur="1.5s"
+                            repeatCount="indefinite"
+                        />
+                    </circle>
+                    <circle cx="15" cy="50" r="5" fill="#ff4757">
+                        <animate
+                            attributeName="cy"
+                            values="50;15;50;85;50"
+                            dur="1.5s"
+                            repeatCount="indefinite"
+                        />
+                        <animate
+                            attributeName="cx"
+                            values="15;50;85;50;15"
+                            dur="1.5s"
+                            repeatCount="indefinite"
+                        />
+                    </circle>
+                </g>
+                <g>
+                    <path
+                        d="M 50,50
+                           m -35, 0
+                           a 35,35 0 1,0 70,0
+                           a 35,35 0 1,0 -70,0"
+                        fill="none"
+                        stroke="#28a745"
+                        strokeWidth="6"
+                    >
+                        <animate
+                            attributeName="stroke-dasharray"
+                            from="0, 220"
+                            to="220, 0"
+                            dur="2s"
+                            repeatCount="indefinite"
+                        />
+                    </path>
                 </g>
             </svg>
             <p className="text-white mt-4 text-xl md:text-2xl animate-pulse">Loading...</p>
