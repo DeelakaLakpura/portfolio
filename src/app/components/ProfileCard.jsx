@@ -38,10 +38,13 @@ const ProfileCard = () => {
           transition={{ duration: 0.3 }}
           onClick={handleImageClick}
         />
-        <h2 className="mt-4 text-xl font-bold">Deelaka Lakpura Galpaya</h2>
-        <p className="text-sm text-gray-400">
-           Mobile App Developer| UI/UX Designer <br /> 
-        </p>
+      <div className="text-center">
+  <h2 className="mt-4 text-xl font-bold">Deelaka Lakpura Galpaya</h2>
+  <p className="text-sm text-gray-400">
+    Mobile App Developer | UI/UX Designer <br />
+  </p>
+</div>
+
       </motion.div>
 
       {/* Residence Info */}
@@ -60,6 +63,11 @@ const ProfileCard = () => {
         </div>
       </div>
 
+      {/* Myself Info */}
+      <h3 className="mt-6 text-sm font-semibold">About Me</h3>
+      <p className="mt-2 text-gray-400 text-sm text-center">
+      I’m a Mobile App Developer and UI/UX Designer, focused on creating beautiful, functional, and intuitive mobile applications that enhance user experiences.      </p>
+
       <hr className="my-6 border-gray-700" />
 
       {/* Languages Section */}
@@ -71,12 +79,21 @@ const ProfileCard = () => {
 
       {/* Skills Section */}
       <h3 className="mt-6 text-sm font-semibold">Skills and Competencies</h3>
-      <div className="mt-4 space-y-3">
-        <SkillBar skill="Mobile App Development" percentage="96%" />
-        <SkillBar skill="Web Development" percentage="67%" />
-        <SkillBar skill="Rest APIs" percentage="94%" />
-        <SkillBar skill="Designing (UI/UX)" percentage="66%" />
-      </div>
+<div className="mt-4 space-y-3">
+  <SkillBar skill="Mobile App Development" percentage="96%" />
+  <SkillBar skill="Web Development" percentage="67%" />
+  <SkillBar skill="Rest APIs" percentage="94%" />
+  <SkillBar skill="Designing (UI/UX)" percentage="66%" />
+  <SkillBar skill="JavaScript" percentage="90%" />
+  <SkillBar skill="Python" percentage="85%" />
+  <SkillBar skill="Java" percentage="80%" />
+  <SkillBar skill="C++" percentage="75%" />
+  <SkillBar skill="SQL" percentage="80%" />
+  <SkillBar skill="Version Control (Git)" percentage="90%" />
+  <SkillBar skill="Agile Methodologies" percentage="70%" />
+  <SkillBar skill="Cloud Computing (AWS, Azure)" percentage="75%" />
+  <SkillBar skill="DevOps Practices" percentage="70%" />
+</div>
 
       <h3 className="mt-6 text-sm font-semibold">Technologies</h3>
       <div className="flex flex-wrap justify-center mt-4 space-x-4">
