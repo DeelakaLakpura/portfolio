@@ -9,56 +9,58 @@ const Loading = () => {
                 className="h-32 w-32 lg:h-48 lg:w-48"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 100 100"
-                preserveAspectRatio="xMidYMid"
             >
-                <circle
-                    cx="50"
-                    cy="50"
-                    r="40"
-                    fill="none"
-                    stroke="#4c6ef5"
-                    strokeWidth="8"
-                    strokeLinecap="round"
-                >
+                <circle cx="50" cy="50" r="5" fill="#4c6ef5">
                     <animate
-                        attributeName="stroke-dasharray"
-                        from="0 251.2"
-                        to="251.2 0"
-                        dur="2s"
+                        attributeName="r"
+                        from="5"
+                        to="20"
+                        dur="0.6s"
+                        begin="0s"
+                        repeatCount="indefinite"
+                        fill="freeze"
+                    />
+                    <animate
+                        attributeName="fill"
+                        values="#4c6ef5; #28a745; #4c6ef5"
+                        dur="0.6s"
+                        begin="0s"
                         repeatCount="indefinite"
                     />
                 </circle>
-                <circle
-                    cx="50"
-                    cy="50"
-                    r="30"
-                    fill="none"
-                    stroke="#28a745"
-                    strokeWidth="6"
-                    strokeLinecap="round"
-                >
+                <circle cx="50" cy="50" r="5" fill="#28a745">
                     <animate
-                        attributeName="stroke-dasharray"
-                        from="0 188.4"
-                        to="188.4 0"
-                        dur="1.5s"
+                        attributeName="r"
+                        from="5"
+                        to="20"
+                        dur="0.6s"
+                        begin="0.3s"
+                        repeatCount="indefinite"
+                        fill="freeze"
+                    />
+                    <animate
+                        attributeName="fill"
+                        values="#28a745; #ffc107; #28a745"
+                        dur="0.6s"
+                        begin="0.3s"
                         repeatCount="indefinite"
                     />
                 </circle>
-                <circle
-                    cx="50"
-                    cy="50"
-                    r="20"
-                    fill="none"
-                    stroke="#ffc107"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                >
+                <circle cx="50" cy="50" r="5" fill="#ffc107">
                     <animate
-                        attributeName="stroke-dasharray"
-                        from="0 125.6"
-                        to="125.6 0"
-                        dur="1s"
+                        attributeName="r"
+                        from="5"
+                        to="20"
+                        dur="0.6s"
+                        begin="0.6s"
+                        repeatCount="indefinite"
+                        fill="freeze"
+                    />
+                    <animate
+                        attributeName="fill"
+                        values="#ffc107; #4c6ef5; #ffc107"
+                        dur="0.6s"
+                        begin="0.6s"
                         repeatCount="indefinite"
                     />
                 </circle>
