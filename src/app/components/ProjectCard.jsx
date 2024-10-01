@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 import { motion } from "framer-motion";
+
 const CarSlider = ({ cars }) => {
+  const progressCircle = useRef(null);
+  const progressContent = useRef(null);
+
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty('--progress', 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 800)}s`;
+  };
+
   return (
     <div className="p-4">
       <h2 className="text-3xl font-bold text-green-600 mb-4 text-center">My Projects</h2>
-      <Swiper
+      <Swiper 
+        modules={[Autoplay]} 
         pagination={{
           clickable: true,
         }}
@@ -16,9 +28,15 @@ const CarSlider = ({ cars }) => {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         }}
+        autoplay={{
+          delay: 3000, 
+          disableOnInteraction: true,
+        }}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="max-w-screen-lg mx-auto"
         slidesPerView={3}
         spaceBetween={20}
+        loop={true} 
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -56,19 +74,18 @@ const CarSlider = ({ cars }) => {
             </div>
           </SwiperSlide>
         ))}
-
-        {/* Add the pagination element */}
-    
-
+        <div className="autoplay-progress" slot="container-end">
+          <span ref={progressCircle}></span>
+          <span ref={progressContent}></span>
+        </div>
       </Swiper>
 
       <div className="text-white flex justify-center items-center mt-2">
-  <i className="fas fa-dot-circle text-white hover:text-blue-400 text-1xl"></i>&nbsp;
-  <i className="fas fa-dot-circle text-white hover:text-blue-400 text-1xl"></i>&nbsp;
-  <i className="fas fa-dot-circle text-white hover:text-blue-400 text-1xl"></i>&nbsp;
-  <i className="fas fa-dot-circle text-white hover:text-blue-400 text-1xl"></i>&nbsp;
-</div>
-
+        <i className="fas fa-dot-circle text-white hover:text-blue-400 text-1xl"></i>&nbsp;
+        <i className="fas fa-dot-circle text-white hover:text-blue-400 text-1xl"></i>&nbsp;
+        <i className="fas fa-dot-circle text-white hover:text-blue-400 text-1xl"></i>&nbsp;
+        <i className="fas fa-dot-circle text-white hover:text-blue-400 text-1xl"></i>&nbsp;
+      </div>
     </div>
   );
 };
