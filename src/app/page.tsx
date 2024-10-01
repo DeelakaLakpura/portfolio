@@ -12,21 +12,19 @@ export default function Home() {
   const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
-    // Simulate a loading delay (e.g., fetching data)
     const timer = setTimeout(() => {
-      setLoading(false); // Set loading to false after the delay
-    }, 2000); // Adjust the delay as needed (2000 ms = 2 seconds)
+      setLoading(false);
+    }, 2000);
 
-    return () => clearTimeout(timer); // Cleanup timer on unmount
+    return () => clearTimeout(timer);
   }, []);
 
-  // If loading, show the loading component
   if (loading) {
     return <Loading />;
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col lg:flex-row justify-between items-start p-3 md:p-3 lg:p-6 overflow-x-hidden">
+    <div className="min-h-screen bg-gray-900 text-white flex flex-col lg:flex-row justify-between items-start p-3 md:p-3 lg:p-6 overflow-x-hidden scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
       <div className="lg:w-1/4 w-full rounded-lg p-2 mb-10 lg:mb-0">
@@ -44,7 +42,6 @@ export default function Home() {
 
         <TestomonialSection />
 
-        {/* Full width footer */}
         <div className="w-full mt-6 bg-gray-900">
           <Footer />
         </div>

@@ -91,3 +91,21 @@ html {
 .zoom-animation {
   animation: zoom 2s infinite;
 }
+
+/* Example of additional custom styles in your global CSS file */
+.scrollbar {
+  scrollbar-width: thin; /* Firefox */
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px; /* Chrome, Safari and Opera */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #1f1f1f; /* Track */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4a4a4a; /* Thumb */
+  border-radius: 10px; /* Rounded corners */
+}
