@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import loadingAnimation from './assets/laoding.json'; // Replace with your animation file
+import loadingAnimation from './assets/laoding.json'; 
 
 const LoadingScreen = () => {
   return (
@@ -9,12 +9,13 @@ const LoadingScreen = () => {
         <Lottie
           animationData={loadingAnimation}
           loop={true}
-          className="w-32 h-32 md:w-48 md:h-48"
+        
+          className="w-32 h-32 md:w-68 md:h-68"
         />
         <h2 className="mt-4 text-xl font-bold text-white animate-bounce">
           Loading, please wait...
         </h2>
-        <div className="mt-2 w-24 h-1 bg-gray-500 animate-pulse"></div>
+     
       </div>
     </div>
   );
