@@ -76,3 +76,18 @@ html {
 .shake-animation {
   animation: shake 3s infinite;
 }
+
+
+/* Add this to your global styles or a specific CSS module */
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.zoom-animation {
+  animation: zoom 2s infinite;
+}

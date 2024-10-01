@@ -85,12 +85,12 @@ function HeroSection() {
 
       {/* Profile Image Section */}
       <div className="relative z-10 flex justify-center items-center mt-8 lg:mt-0 lg:ml-8">
-        <img
-          src="https://i.ibb.co/tQySgsC/Untitled-removebg-preview-p-Wgg-Tu9tz-transformed.png" // Replace with your actual image path
-          alt="Profile"
-          className="rounded-full w-60 h-60 border-4 border-green-500 shadow-lg transition-transform duration-300 transform hover:scale-110"
-        />
-      </div>
+      <img
+        src="https://i.ibb.co/tQySgsC/Untitled-removebg-preview-p-Wgg-Tu9tz-transformed.png" // Replace with your actual image path
+        alt="Profile"
+        className="rounded-full w-60 h-60 border-4 border-green-500 shadow-lg zoom-animation" // Add the zoom-animation class here
+      />
+    </div>
     </div>
 
   );
