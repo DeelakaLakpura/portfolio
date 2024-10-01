@@ -1,11 +1,30 @@
+"use client";
+import { useState, useEffect } from "react";
 import ProfileCard from "./components/ProfileCard";
 import ProjectShowcase from "./components/ProjectShowcase";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
 import TestomonialSection from "./components/TestimonialSection";
 import ScrollToTopButton from "./components/ScrollToTopButton"; 
+import Loading from "./components/Lading"; // Import your loading component
 
 export default function Home() {
+  const [loading, setLoading] = useState(true); // Loading state
+
+  useEffect(() => {
+    // Simulate a loading delay (e.g., fetching data)
+    const timer = setTimeout(() => {
+      setLoading(false); // Set loading to false after the delay
+    }, 2000); // Adjust the delay as needed (2000 ms = 2 seconds)
+
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, []);
+
+  // If loading, show the loading component
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col lg:flex-row justify-between items-start p-3 md:p-3 lg:p-6 overflow-x-hidden">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -28,12 +47,9 @@ export default function Home() {
         {/* Full width footer */}
         <div className="w-full mt-6 bg-gray-900">
           <Footer />
-      
         </div>
-     
       </div>
       <ScrollToTopButton />
     </div>
-
   );
-} 
+}
