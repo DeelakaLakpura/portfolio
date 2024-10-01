@@ -92,7 +92,7 @@ html {
   animation: zoom 2s infinite;
 }
 
-/* Example of additional custom styles in your global CSS file */
+/* Global CSS for gradient scrollbar */
 .scrollbar {
   scrollbar-width: thin; /* Firefox */
 }
@@ -106,6 +106,10 @@ html {
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-  background-color: #4a4a4a; /* Thumb */
+  background: linear-gradient(180deg, #4a4a4a, #8b8b8b); /* Gradient Thumb */
   border-radius: 10px; /* Rounded corners */
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #6a6a6a, #a1a1a1); /* Hover effect with a gradient */
 }
