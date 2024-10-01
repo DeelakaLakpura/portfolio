@@ -9,7 +9,8 @@ const LoadingScreen = () => {
         <Lottie
           animationData={loadingAnimation}
           loop={true}
-          className="w-32 h-32 md:w-68 md:h-68"
+     
+          className="w-62 h-62 md:w-48 md:h-48"
         />
         <h2 className="mt-4 text-xl font-bold text-white animate-bounce">
           Loading, please wait...
