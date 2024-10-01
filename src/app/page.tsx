@@ -4,7 +4,7 @@ import ProfileCard from "./components/ProfileCard";
 import ProjectShowcase from "./components/ProjectShowcase";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
-import TestomonialSection from "./components/TestimonialSection";
+import TestimonialSection from "./components/TestimonialSection";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Loading from "./components/Loading"; // Import the Loading component
 
@@ -40,7 +40,7 @@ export default function Home() {
           <ProjectShowcase />
         </div>
 
-        <TestomonialSection />
+        <TestimonialSection />
 
         {/* Full width footer */}
         <div className="w-full mt-6 bg-gray-900">
