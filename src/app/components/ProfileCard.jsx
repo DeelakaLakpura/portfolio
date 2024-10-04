@@ -1,6 +1,6 @@
 'use client';
 import { useState } from "react";
-import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaLinkedin,FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 
@@ -211,6 +211,11 @@ const ProfileCard = () => {
         </motion.a>
         <motion.a href="https://www.linkedin.com/in/deelaka-lakpura/" className="text-white" whileHover={{ scale: 1.2 }}>
           <FaLinkedin />
+        </motion.a>
+
+        <motion.a href="https://wa.me/+94752056898" 
+      target="_blank"  className="text-white" whileHover={{ scale: 1.2 }}>
+          <FaWhatsapp />
         </motion.a>
       </div>
 

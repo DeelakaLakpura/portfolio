@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid meet">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #2d2d2d; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #555555; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#bgGradient)" />
+
+  <!-- Abstract Circles -->
+  <circle cx="200" cy="300" r="120" fill="rgba(255, 255, 255, 0.05)" />
+  <circle cx="1300" cy="100" r="90" fill="rgba(255, 255, 255, 0.07)" />
+  <circle cx="1100" cy="700" r="100" fill="rgba(255, 255, 255, 0.06)" />
+  <circle cx="300" cy="700" r="50" fill="rgba(255, 255, 255, 0.08)" />
+
+  <!-- Abstract Waves -->
+  <path d="M0 600 C400 400, 800 800, 1440 600" stroke="rgba(255, 255, 255, 0.05)" stroke-width="4" fill="none" />
+  <path d="M0 750 C300 550, 900 950, 1440 750" stroke="rgba(255, 255, 255, 0.07)" stroke-width="4" fill="none" />
+
+  <!-- Tech Icons (Hexagons) -->
+  <polygon points="400,100 450,75 500,100 500,150 450,175 400,150" fill="rgba(255, 255, 255, 0.05)" />
+  <polygon points="1000,400 1050,375 1100,400 1100,450 1050,475 1000,450" fill="rgba(255, 255, 255, 0.05)" />
+  
+  <!-- Abstract Triangles -->
+  <polygon points="200,600 300,650 200,700" fill="rgba(255, 255, 255, 0.08)" />
+  <polygon points="1300,400 1350,450 1300,500" fill="rgba(255, 255, 255, 0.08)" />
+  
+  <!-- Animated Circles -->
+  <circle cx="800" cy="450" r="80" fill="rgba(255, 255, 255, 0.02)" >
+    <animate attributeName="r" from="80" to="100" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" from="0.1" to="0.05" dur="4s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="800" cy="450" r="50" fill="rgba(255, 255, 255, 0.1)">
+    <animate attributeName="r" from="50" to="60" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="opacity" from="0.1" to="0.02" dur="6s" repeatCount="indefinite" />
+  </circle>
+</svg>

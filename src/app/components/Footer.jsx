@@ -69,9 +69,11 @@ const Footer = () => {
               >
                 <i className={`fab fa-${icon} fa-lg`}></i>
               </motion.a>
+              
             ))}
           </div>
         </motion.div>
+      
       </div>
 
       {/* Additional Section: Contact */}

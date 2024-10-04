@@ -6,7 +6,9 @@ const TypingAnimation = () => {
   const phrases = [
     "I am a MERN Stack Developer",
     "I love coding with JavaScript",
-    "Creating amazing web applications"
+    "Creating amazing web applications",
+    "Creating Advanced mobile applications",
+
   ];
 
   const [displayText, setDisplayText] = useState("");
