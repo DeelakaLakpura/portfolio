@@ -7,7 +7,7 @@ async function sendTestEmail() {
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'deelakaporfolio@outlook.com', // Your email address
-      pass: 'pvovuhvdyatljctd', // Your email password or app password
+      pass: 'deelaka2001', // Your email password or app password
     },
   });
 
