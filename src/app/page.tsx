@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import TestomonialSection from "./components/TestimonialSection";
 import ScrollToTopButton from "./components/ScrollToTopButton"; 
 import Loading from "./components/Lading"; 
+import ExperienceTimeline from './components/ExperienceTimeline';
 
 export default function Home() {
   const [loading, setLoading] = useState(true); // Loading state
@@ -44,7 +45,7 @@ export default function Home() {
           <TestomonialSection />
         
         
-      
+          <ExperienceTimeline />
           
         </div>
 

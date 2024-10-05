@@ -50,35 +50,51 @@ function HeroSection() {
 
         {/* Contact Button */}
         <div className="flex flex-col items-center">
-    <div className="flex flex-col md:flex-row md:space-x-4">
-        <button
-            className="mt-4 flex items-center justify-center bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded bounce-animation w-full md:w-auto"
-        >
-            <i className="fas fa-download mr-2"></i>
-            <a 
-                href="https://firebasestorage.googleapis.com/v0/b/video-app-35cc0.appspot.com/o/CV%20(1).pdf?alt=media&token=9c4c75de-b19c-4bdd-aa29-89509ef6ff99" 
-                target="_blank" 
-                rel="noopener noreferrer"
-            >
-                Download CV
-            </a>
-        </button>
+  <div className="flex flex-col md:flex-row md:space-x-4">
+    <button
+      className="mt-4 flex items-center justify-center bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded bounce-animation w-full md:w-auto"
+    >
+      <i className="fas fa-download mr-2"></i>
+      <a 
+        href="https://firebasestorage.googleapis.com/v0/b/video-app-35cc0.appspot.com/o/CV%20(1).pdf?alt=media&token=9c4c75de-b19c-4bdd-aa29-89509ef6ff99" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Download CV
+      </a>
+    </button>
 
-        <button
-            className="mt-4 flex items-center justify-center bg-green-900 hover:bg-green-700 text-white font-bold py-2 px-4 rounded shake-animation w-full md:w-auto"
-        >
-            <i className="fas fa-comment mr-2"></i>
-            <a 
-                href="mailto:deelaka.lakpura94@gmail.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="transition transform duration-300 hover:scale-105 hover:text-white"
-            >
-                Contact Me
-            </a>
-        </button>
-    </div>
+    <button
+      className="mt-4 flex items-center justify-center bg-green-900 hover:bg-green-700 text-white font-bold py-2 px-4 rounded shake-animation w-full md:w-auto"
+    >
+      <i className="fas fa-comment mr-2"></i>
+      <a 
+        href="mailto:deelaka.lakpura94@gmail.com" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="transition transform duration-300 hover:scale-105 hover:text-white"
+      >
+        Contact On Email
+      </a>
+    </button>
+
+    {/* New WhatsApp Button */}
+    <button
+      className="mt-4 flex items-center justify-center bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-4 rounded bounce-animation w-full md:w-auto"
+    >
+      <i className="fab fa-whatsapp mr-2"></i>
+      <a 
+        href="https://wa.me/+94752056898" // Replace 'your-phone-number' with your actual phone number
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="transition transform duration-300 hover:scale-105 hover:text-white"
+      >
+        Contact on WhatsApp
+      </a>
+    </button>
+  </div>
 </div>
+
 
 
       </div>

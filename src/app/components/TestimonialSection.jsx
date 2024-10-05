@@ -13,7 +13,7 @@ const testimonials = [
     name: "Prabani Hearath",
     feedback: "This team truly goes above and beyond. I'm a very satisfied customer.",
     role: "Freelancer | Undergraduate",
-    avatar: "https://scontent-ams4-1.xx.fbcdn.net/v/t39.30808-1/432787226_122132175962159744_7671380885539367150_n.jpg?stp=dst-jpg_s480x480&_nc_cat=105&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeF2xg-qqmbU9rlGWuS-W2_yIAXKqcIWE4QgBcqpwhYThP5NUEwSO6H9PN5pfShleJLzaOS2d8fzfhZLJLkSzhFO&_nc_ohc=s5goOsTysskQ7kNvgFMpw4i&_nc_ht=scontent-ams4-1.xx&_nc_gid=AzNgWSCv3-3wsmNckoTEGEu&oh=00_AYDvOkyUDS61qfJYaxW-h6yaqBY3-OqfaZ8yTbkHcmQtCQ&oe=670083E4",
+    avatar: "https://i.ibb.co/y01Nk6v/432787226-122132175962159744-7671380885539367150-n.jpg",
   },
   {
     name: "Vinodya Senarathne",

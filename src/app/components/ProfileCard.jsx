@@ -79,7 +79,7 @@ const ProfileCard = () => {
 
       {/* Skills Section */}
       <h3 className="mt-6 text-sm font-semibold">Skills and Competencies</h3>
-<div className="mt-4 space-y-3">
+      <div className="mt-4 space-y-3">
   <SkillBar skill="Mobile App Development" percentage="96%" />
   <SkillBar skill="Web Development" percentage="67%" />
   <SkillBar skill="Rest APIs" percentage="94%" />
@@ -93,7 +93,13 @@ const ProfileCard = () => {
   <SkillBar skill="Agile Methodologies" percentage="70%" />
   <SkillBar skill="Cloud Computing (AWS, Azure)" percentage="75%" />
   <SkillBar skill="DevOps Practices" percentage="70%" />
+  <SkillBar skill="React.js" percentage="88%" />
+  <SkillBar skill="Node.js" percentage="85%" />
+  <SkillBar skill="Machine Learning" percentage="80%" />
+
+
 </div>
+
 
       <h3 className="mt-6 text-sm font-semibold">Technologies</h3>
       <div className="flex flex-wrap justify-center mt-4 space-x-4">
@@ -197,6 +203,7 @@ const ProfileCard = () => {
     <span className="text-base font-bold">Royal College - Colombo</span>
     <span className="text-gray-400 text-sm">Sri Lanka <span className="text-gray-400 text-xs">🇱🇰</span></span>
   </div>
+ 
 </div>
 
 
