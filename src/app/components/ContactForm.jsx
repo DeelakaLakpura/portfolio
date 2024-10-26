@@ -2,7 +2,7 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faUser, faPhone, faMessage } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faUser, faPhone, faMessage } from "react-icons/fa";
 import animationData from './contact.json'; // Replace with your Lottie animation
 import { motion } from 'framer-motion';
 
