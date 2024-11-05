@@ -20,7 +20,7 @@ const Footer = () => {
             DEELAKA LAKPURA
           </h2>
           <p className="text-gray-400 mb-6 text-lg">
-          Software Developer & UI/UX Designer. Passionate about creating innovative and user-friendly applications that enhance the user experience and solve real-world problems.
+          Software Developer &#38; UI/UX Designer. Passionate about creating innovative and user-friendly applications that enhance the user experience and solve real-world problems.
           </p>
           <motion.a
             href="mailto:deelaka@gmail.com"
