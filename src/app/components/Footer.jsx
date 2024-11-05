@@ -40,18 +40,25 @@ const Footer = () => {
         >
           <h3 className="text-3xl font-bold text-green-400 mb-4">My Skills</h3>
           <div className="grid grid-cols-2 gap-4">
-            {["React", "Flutter", "Tailwind CSS", "Node.js"].map((skill, index) => (
-              <motion.div
-                key={index}
-                className="flex items-center bg-gray-700 p-3 rounded-lg shadow-lg"
-                whileHover={{ scale: 1.1, color: "#A0AEC0" }}
-                transition={{ duration: 0.2 }}
-              >
-             
-                <span className="text-gray-400 text-lg">{skill}</span>
-              </motion.div>
-            ))}
-          </div>
+  {["React", "Flutter", "Tailwind CSS", "Node.js"].map((skill, index) => (
+    <motion.div
+      key={index}
+      className="flex items-center bg-gray-700 p-3 rounded-lg shadow-lg"
+      whileHover={{ scale: 1.1, color: "#A0AEC0" }}
+      initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and shifted down
+      animate={{ opacity: 1, y: 0 }} // Fade in and bounce to the original position
+      transition={{
+        type: "spring", // Use spring animation for a bouncing effect
+        stiffness: 100, // Control the spring's stiffness
+        damping: 10, // Control the bounce damping
+        duration: 0.8, // Duration of the animation
+        delay: index * 0.3 // Delay each item for a staggered effect
+      }}
+    >
+      <span className="text-gray-400 text-lg">{skill}</span>
+    </motion.div>
+  ))}
+</div>
         </motion.div>
 
         {/* Right Column: Social Media & Contact */}

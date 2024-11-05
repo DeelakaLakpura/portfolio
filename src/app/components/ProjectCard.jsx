@@ -50,8 +50,9 @@ const CarSlider = ({ cars }) => {
         }}
       >
         {cars.map((car, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} >
             <motion.div
+          
               className="relative max-w-xs rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
