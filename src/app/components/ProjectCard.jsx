@@ -71,7 +71,7 @@ const CarSlider = ({ cars }) => {
                 <motion.h2
                   className="text-xl font-bold mb-2"
                   initial={{ y: 20, opacity: 0 }}
-                  whileHover={{ y: 0, opacity: 1 }}
+                  animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.3 }}
                 >
                   {car.title}
