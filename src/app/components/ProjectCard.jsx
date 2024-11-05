@@ -63,7 +63,7 @@ const CarSlider = ({ cars }) => {
 
               {/* Overlay for Details */}
               <motion.div
-                className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-white opacity-0 transition-opacity duration-300 hover:opacity-100"
+                className="absolute text-center inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-white transition-opacity duration-300 "
                 initial={{ opacity: 0 }}
                 whileHover={{ opacity: 1 }}
                 transition={{ duration: 0.3 }}
